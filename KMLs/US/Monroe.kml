@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark>
+<Style>
+<PolyStyle><color>4b24654f</color></PolyStyle>
+<LineStyle><color>5f24654f</color><width>5</width></LineStyle>
+</Style>
+<name>Monroe</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-84.36945,39.46444,0
+-84.39434,39.44575,0
+-84.38696,39.41473,0
+-84.34799,39.41274,0
+-84.32516,39.43886,0
+-84.32121,39.45941,0
+-84.36945,39.46444,0
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document></kml>
