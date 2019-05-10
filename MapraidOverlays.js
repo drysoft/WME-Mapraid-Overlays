@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/users/30701-justins83-waze
-// @version          2019.05.07.01
+// @version          2019.05.10.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
