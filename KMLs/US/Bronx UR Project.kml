@@ -3,7 +3,7 @@
 <PolyStyle><color>4b0000FF</color></PolyStyle>
 <LineStyle><color>5f0000FF</color><width>5</width></LineStyle>
 </Style>
-<name>1</name>
+<name>Group 1</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -23,7 +23,7 @@
 <PolyStyle><color>4b0000FF</color></PolyStyle>
 <LineStyle><color>5f0000FF</color><width>5</width></LineStyle>
 </Style>
-<name>2</name>
+<name>Group 2</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -43,7 +43,7 @@
 <PolyStyle><color>4b9b5701</color></PolyStyle>
 <LineStyle><color>5f9b5701</color><width>5</width></LineStyle>
 </Style>
-<name>3</name>
+<name>Group 3</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -63,7 +63,7 @@
 <PolyStyle><color>4b42b37c</color></PolyStyle>
 <LineStyle><color>5f42b37c</color><width>5</width></LineStyle>
 </Style>
-<name>4</name>
+<name>Group 4</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -83,7 +83,7 @@
 <PolyStyle><color>4b007cf5</color></PolyStyle>
 <LineStyle><color>5f007cf5</color><width>5</width></LineStyle>
 </Style>
-<name>5</name>
+<name>Group 5</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -103,7 +103,7 @@
 <PolyStyle><color>4b42b37c</color></PolyStyle>
 <LineStyle><color>5f42b37c</color><width>5</width></LineStyle>
 </Style>
-<name>6</name>
+<name>Group 6</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -123,7 +123,7 @@
 <PolyStyle><color>4b007cf5</color></PolyStyle>
 <LineStyle><color>5f007cf5</color><width>5</width></LineStyle>
 </Style>
-<name>7</name>
+<name>Group 7</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -143,7 +143,7 @@
 <PolyStyle><color>4b0000FF</color></PolyStyle>
 <LineStyle><color>5f0000FF</color><width>5</width></LineStyle>
 </Style>
-<name>8</name>
+<name>Group 8</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -163,7 +163,7 @@
 <PolyStyle><color>4b9b5701</color></PolyStyle>
 <LineStyle><color>5f9b5701</color><width>5</width></LineStyle>
 </Style>
-<name>9</name>
+<name>Group 9</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -183,7 +183,7 @@
 <PolyStyle><color>4b0000FF</color></PolyStyle>
 <LineStyle><color>5f0000FF</color><width>5</width></LineStyle>
 </Style>
-<name>10</name>
+<name>Group 10</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -203,7 +203,7 @@
 <PolyStyle><color>4b9b5701</color></PolyStyle>
 <LineStyle><color>5f9b5701</color><width>5</width></LineStyle>
 </Style>
-<name>11</name>
+<name>Group 11</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -223,7 +223,7 @@
 <PolyStyle><color>4b42b37c</color></PolyStyle>
 <LineStyle><color>5f42b37c</color><width>5</width></LineStyle>
 </Style>
-<name>12</name>
+<name>Group 12</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -243,7 +243,7 @@
 <PolyStyle><color>4b007cf5</color></PolyStyle>
 <LineStyle><color>5f007cf5</color><width>5</width></LineStyle>
 </Style>
-<name>13</name>
+<name>Group 13</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -263,7 +263,7 @@
 <PolyStyle><color>4b42b37c</color></PolyStyle>
 <LineStyle><color>5f42b37c</color><width>5</width></LineStyle>
 </Style>
-<name>14</name>
+<name>Group 14</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -284,7 +284,7 @@
 <PolyStyle><color>4b007cf5</color></PolyStyle>
 <LineStyle><color>5f007cf5</color><width>5</width></LineStyle>
 </Style>
-<name>15</name>
+<name>Group 15</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -304,7 +304,7 @@
 <PolyStyle><color>4b0000FF</color></PolyStyle>
 <LineStyle><color>5f0000FF</color><width>5</width></LineStyle>
 </Style>
-<name>16</name>
+<name>Group 16</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -324,7 +324,7 @@
 <PolyStyle><color>4b9b5701</color></PolyStyle>
 <LineStyle><color>5f9b5701</color><width>5</width></LineStyle>
 </Style>
-<name>17</name>
+<name>Group 17</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -344,7 +344,7 @@
 <PolyStyle><color>4b9b5701</color></PolyStyle>
 <LineStyle><color>5f9b5701</color><width>5</width></LineStyle>
 </Style>
-<name>18</name>
+<name>Group 18</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -365,7 +365,7 @@
 <PolyStyle><color>4b42b37c</color></PolyStyle>
 <LineStyle><color>5f42b37c</color><width>5</width></LineStyle>
 </Style>
-<name>19</name>
+<name>Group 19</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
