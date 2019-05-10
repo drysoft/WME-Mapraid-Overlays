@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.10.03
+// @version          2019.05.10.04
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -150,6 +150,11 @@
             _features[i].style.fontSize= "16px";
             _features[i].style.fontColor= _features[i].style.fillColor;//"#ffffff";
             _features[i].attributes.mapraidName = mapraidName;
+            if(!_settings.EnabledOverlays[mapraidName].fillAreas){
+                if(!_origOpacity)
+                    _origOpacity = _features[i].style.fillOpacity;
+                _features[i].style.fillOpacity = 0;
+            }
         }
 
         _layer.addFeatures(_features);
@@ -171,7 +176,7 @@
         $newRaidSection.html([
             `<fieldset style="border:1px solid silver; padding:8px; border-radius:4px; position:relative;"><legend style="margin-bottom:0px; borer-bottom-style:none; width:auto;"><h4>${mapraidName}</h4></legend>`,
             `<i class="fa fa-minus fa-lg" id="mroRemoveOverlay${mapraidName.replace(/\s/g, "_")}" aria-hidden="true" style="color:red; position:absolute; cursor:pointer; top:10px; right:5px;"></i>`,
-            `<div><input type="checkbox" id="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}" checked /><label for="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}">Fill raid area</label></div>`,
+            `<div><input type="checkbox" id="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}" ${_settings.EnabledOverlays[mapraidName].fillAreas ? 'checked' : ''} /><label for="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}">Fill raid area</label></div>`,
             `Jump to <select id="${mapraidName.replace(/\s/g, "_")}_Areas">${
             function(){
                 let names = $(RaidAreas).find('name');
@@ -187,6 +192,12 @@
 
         $(`#mroOverlaySelect option[value="${mapraidName}"]`).remove(); //remove this option from the list
         $('#currOverlays').append($newRaidSection.html()); //add the mapraid section
+
+        $('[id^="_cbMROFillRaidArea"]').change(function(){
+            let mapraid = this.id.replace("_cbMROFillRaidArea", "");
+            _settings.EnabledOverlays[_mapraidNameMap[mapraid]].fillAreas = isChecked(this.id);
+            saveSettings();
+        });
 
         $('[id^="mroRemoveOverlay"]').click(function(){
             let mapraid = this.id.replace("mroRemoveOverlay", "");
@@ -254,7 +265,7 @@
 
         for (var i=0;i<_layer.features.length;i++){
             var feature = _layer.features[i];
-            if(_origOpacity)
+            if(_origOpacity && _settings.EnabledOverlays[feature.attributes.mapraidName].fillAreas)
                 feature.style.fillOpacity = _origOpacity;
             if(feature.geometry.intersects(center)){
                 $('#mroCurrAreaTopbar').text(feature.attributes.name);
@@ -275,21 +286,21 @@
         getAvailableOverlays();
 
         $.each(_settings.EnabledOverlays, function(k, v){
-            BuildEnabledOverlays(k);
             if(!_mapraidNameMap[k.replace(/\s/g, "_")])
                 _mapraidNameMap[k.replace(/\s/g, "_")] = k;
+            BuildEnabledOverlays(k);
 
         });
 
         $('#mroAddOverlay').click(async function(){
             if($('#mroOverlaySelect').val() !== null){
                 let raid = $('#mroOverlaySelect').val();
+                _settings.EnabledOverlays[raid] = {fillAreas: true};
 
                 BuildEnabledOverlays(raid);
                 if(!_mapraidNameMap[raid.replace(/\s/g, "_")])
                     _mapraidNameMap[raid.replace(/\s/g, "_")] = raid;
 
-                _settings.EnabledOverlays[raid] = {fillAreas: true};
                 saveSettings();
             }
         });
