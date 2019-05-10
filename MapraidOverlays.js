@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.10.02
+// @version          2019.05.10.03
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -62,7 +62,8 @@
         _settings = $.parseJSON(localStorage.getItem(_settingsStoreName));
         let _defaultsettings = {
             layerVisible: true,
-            EnabledOverlays: {}
+            EnabledOverlays: {},
+            HideCurrentArea: false
         };
         _settings = $.extend({}, _defaultsettings, _settings);
     }
@@ -71,7 +72,8 @@
         if (localStorage) {
             var settings = {
                 layerVisible: _layer.visibility,
-                EnabledOverlays: _settings.EnabledOverlays
+                EnabledOverlays: _settings.EnabledOverlays,
+                HideCurrentArea: _settings.HideCurrentArea
             };
             localStorage.setItem(_settingsStoreName, JSON.stringify(settings));
         }
@@ -95,20 +97,12 @@
 
         var layerid = 'wme_mapraid_overlays';
 
-        /*var layerStyle = new OL.StyleMap({
-            strokeDashstyle: 'solid',
-            label : "${labelText}", labelOutlineColor: '#000000',
-            labelOutlineWidth: 4, labelAlign: 'cm',
-            fontSize: "16px", fontColor: "#ffffff"
-        });*/
-
         _layer = new OL.Layer.Vector("Mapraid Overlays", {
             rendererOptions: { zIndexing: true },
             uniqueName: layerid,
             layerGroup: 'mapraid_overlays',
             zIndex: -9999,
             visibility: _settings.layerVisible
-            //styleMap: layerStyle
         });
         I18n.translations[I18n.locale].layers.name[layerid] = "Mapraid Overlays";
         W.map.addLayer(_layer);
@@ -117,6 +111,7 @@
         $section.html([
             `<h4 style="margin-bottom:0px;"><b>WME Mapraid Overlays</b></h4>`,
             `<h6 style="margin-top:0px;">${GM_info.script.version}</h6>`,
+            `<div><input type="checkbox" id="_cbMROHideCurrentArea" class="wmemroSettingsCheckbox" /><label for="_cbMROHideCurrentArea">Hide fill for current area</label></div>`,
             `<div id="divWMEMROAvailableOverlays"><label>Available overlays</label> <select id="mroOverlaySelect" style="min-width:125px;"></select><i class="fa fa-plus fa-lg" id="mroAddOverlay" aria-hidden="true" style="color:green; cursor:pointer;"></i></div>`,
             '<div id="currOverlays"></div>',
             '<div style="position:absolute; bottom:0;">Generate new mapraid overlays at <a href="http://wazedev.com/mapraidgenerator.html" target="_blank">http://wazedev.com/mapraidgenerator.html</a></div>',
@@ -161,7 +156,14 @@
     }
 
     async function BuildEnabledOverlays(mapraidName){
-        let kml = await getKML(encodeURI(`https://raw.githubusercontent.com/WazeDev/WME-Mapraid-Overlays/master/KMLs/${countryAbbr}/${mapraidName}.kml`));
+        let kml;
+        try{
+            kml = await getKML(encodeURI(`https://raw.githubusercontent.com/WazeDev/WME-Mapraid-Overlays/master/KMLs/${countryAbbr}/${mapraidName}.kml`));
+        }
+        catch(err){
+            return;
+            console.error(err);
+        }
         let kmlObj = $($.parseXML(kml));
         let RaidAreas = $(kmlObj).find('Placemark');
 
@@ -169,7 +171,7 @@
         $newRaidSection.html([
             `<fieldset style="border:1px solid silver; padding:8px; border-radius:4px; position:relative;"><legend style="margin-bottom:0px; borer-bottom-style:none; width:auto;"><h4>${mapraidName}</h4></legend>`,
             `<i class="fa fa-minus fa-lg" id="mroRemoveOverlay${mapraidName.replace(/\s/g, "_")}" aria-hidden="true" style="color:red; position:absolute; cursor:pointer; top:10px; right:5px;"></i>`,
-            `<div><input type="checkbox" id="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}" class="wmemroSettingsCheckbox" checked /><label for="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}">Fill raid area</label></div>`,
+            `<div><input type="checkbox" id="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}" checked /><label for="_cbMROFillRaidArea${mapraidName.replace(/\s/g, "_")}">Fill raid area</label></div>`,
             `Jump to <select id="${mapraidName.replace(/\s/g, "_")}_Areas">${
             function(){
                 let names = $(RaidAreas).find('name');
@@ -233,15 +235,51 @@
         updatePolygons(kml, mapraidName);
     }
 
+    function HandleMoveZoom(){
+        //display the current MR area in the title bar
+        //hide the current MR area fill (if setting is enabled)
+
+        if($('#mrodivCurrMapraidArea').length === 0){
+            var $section = $("<div>");
+            $section.html([
+                '<div id="mrodivCurrMapraidArea" style="font-size: 14px; font-weight:bold; display:inline-block; margin-left:10px;">',
+                '<span id="mroCurrAreaTopbar"></span>',
+                '</div>'
+            ].join(' '));
+
+            $('.topbar').append($section.html());
+        }
+
+        let center = new OL.Geometry.Point(W.map.center.lon,W.map.center.lat);
+
+        for (var i=0;i<_layer.features.length;i++){
+            var feature = _layer.features[i];
+            if(_origOpacity)
+                feature.style.fillOpacity = _origOpacity;
+            if(feature.geometry.intersects(center)){
+                $('#mroCurrAreaTopbar').text(feature.attributes.name);
+                $('#mroCurrAreaTopbar').css('color', feature.style.fillColor);
+
+                if(_settings.HideCurrentArea){
+                    if(!_origOpacity)
+                        _origOpacity = feature.style.fillOpacity;
+                    if(feature.style.fillOpacity > 0)
+                        feature.style.fillOpacity = 0;
+                }
+            }
+        }
+        _layer.redraw();
+    }
+
     function init2(){
         getAvailableOverlays();
 
         $.each(_settings.EnabledOverlays, function(k, v){
             BuildEnabledOverlays(k);
             if(!_mapraidNameMap[k.replace(/\s/g, "_")])
-                    _mapraidNameMap[k.replace(/\s/g, "_")] = k;
-        });
+                _mapraidNameMap[k.replace(/\s/g, "_")] = k;
 
+        });
 
         $('#mroAddOverlay').click(async function(){
             if($('#mroOverlaySelect').val() !== null){
@@ -255,6 +293,22 @@
                 saveSettings();
             }
         });
+
+        $('.wmemroSettingsCheckbox').change(function(){
+            var settingName = $(this)[0].id.substr(6);
+            _settings[settingName] = this.checked;
+            saveSettings();
+        });
+
+        $('#_cbMROHideCurrentArea').change(function(){
+            HandleMoveZoom();
+        });
+
+        WazeWrap.Events.register("zoomend", null, HandleMoveZoom);
+        WazeWrap.Events.register("moveend", null, HandleMoveZoom);
+
+        setChecked('_cbMROHideCurrentArea', _settings.HideCurrentArea);
+        HandleMoveZoom();
     }
 
 })();
