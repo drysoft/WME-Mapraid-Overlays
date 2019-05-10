@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark>
 <Style>
 <PolyStyle><color>4b0000FF</color></PolyStyle>
-<LineStyle><color>7f0000FF</color><width>5</width></LineStyle>
+<LineStyle><color>ff0000FF</color><width>5</width></LineStyle>
 </Style>
 <name>Group 1</name>
 <Polygon>
@@ -21,7 +21,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b0000FF</color></PolyStyle>
-<LineStyle><color>7f0000FF</color><width>5</width></LineStyle>
+<LineStyle><color>ff0000FF</color><width>5</width></LineStyle>
 </Style>
 <name>Group 2</name>
 <Polygon>
@@ -41,7 +41,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b9b5701</color></PolyStyle>
-<LineStyle><color>7f9b5701</color><width>5</width></LineStyle>
+<LineStyle><color>ff9b5701</color><width>5</width></LineStyle>
 </Style>
 <name>Group 3</name>
 <Polygon>
@@ -61,7 +61,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b42b37c</color></PolyStyle>
-<LineStyle><color>7f42b37c</color><width>5</width></LineStyle>
+<LineStyle><color>ff42b37c</color><width>5</width></LineStyle>
 </Style>
 <name>Group 4</name>
 <Polygon>
@@ -81,7 +81,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b007cf5</color></PolyStyle>
-<LineStyle><color>7f007cf5</color><width>5</width></LineStyle>
+<LineStyle><color>ff007cf5</color><width>5</width></LineStyle>
 </Style>
 <name>Group 5</name>
 <Polygon>
@@ -101,7 +101,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b42b37c</color></PolyStyle>
-<LineStyle><color>7f42b37c</color><width>5</width></LineStyle>
+<LineStyle><color>ff42b37c</color><width>5</width></LineStyle>
 </Style>
 <name>Group 6</name>
 <Polygon>
@@ -121,7 +121,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b007cf5</color></PolyStyle>
-<LineStyle><color>7f007cf5</color><width>5</width></LineStyle>
+<LineStyle><color>ff007cf5</color><width>5</width></LineStyle>
 </Style>
 <name>Group 7</name>
 <Polygon>
@@ -141,7 +141,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b0000FF</color></PolyStyle>
-<LineStyle><color>7f0000FF</color><width>5</width></LineStyle>
+<LineStyle><color>ff0000FF</color><width>5</width></LineStyle>
 </Style>
 <name>Group 8</name>
 <Polygon>
@@ -161,7 +161,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b9b5701</color></PolyStyle>
-<LineStyle><color>7f9b5701</color><width>5</width></LineStyle>
+<LineStyle><color>ff9b5701</color><width>5</width></LineStyle>
 </Style>
 <name>Group 9</name>
 <Polygon>
@@ -181,7 +181,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b0000FF</color></PolyStyle>
-<LineStyle><color>7f0000FF</color><width>5</width></LineStyle>
+<LineStyle><color>ff0000FF</color><width>5</width></LineStyle>
 </Style>
 <name>Group 10</name>
 <Polygon>
@@ -201,7 +201,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b9b5701</color></PolyStyle>
-<LineStyle><color>7f9b5701</color><width>5</width></LineStyle>
+<LineStyle><color>ff9b5701</color><width>5</width></LineStyle>
 </Style>
 <name>Group 11</name>
 <Polygon>
@@ -221,7 +221,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b42b37c</color></PolyStyle>
-<LineStyle><color>7f42b37c</color><width>5</width></LineStyle>
+<LineStyle><color>ff42b37c</color><width>5</width></LineStyle>
 </Style>
 <name>Group 12</name>
 <Polygon>
@@ -241,7 +241,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b007cf5</color></PolyStyle>
-<LineStyle><color>7f007cf5</color><width>5</width></LineStyle>
+<LineStyle><color>ff007cf5</color><width>5</width></LineStyle>
 </Style>
 <name>Group 13</name>
 <Polygon>
@@ -261,7 +261,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b42b37c</color></PolyStyle>
-<LineStyle><color>7f42b37c</color><width>5</width></LineStyle>
+<LineStyle><color>ff42b37c</color><width>5</width></LineStyle>
 </Style>
 <name>Group 14</name>
 <Polygon>
@@ -282,7 +282,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b007cf5</color></PolyStyle>
-<LineStyle><color>7f007cf5</color><width>5</width></LineStyle>
+<LineStyle><color>ff007cf5</color><width>5</width></LineStyle>
 </Style>
 <name>Group 15</name>
 <Polygon>
@@ -302,7 +302,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b0000FF</color></PolyStyle>
-<LineStyle><color>7f0000FF</color><width>5</width></LineStyle>
+<LineStyle><color>ff0000FF</color><width>5</width></LineStyle>
 </Style>
 <name>Group 16</name>
 <Polygon>
@@ -322,7 +322,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b9b5701</color></PolyStyle>
-<LineStyle><color>7f9b5701</color><width>5</width></LineStyle>
+<LineStyle><color>ff9b5701</color><width>5</width></LineStyle>
 </Style>
 <name>Group 17</name>
 <Polygon>
@@ -342,7 +342,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b9b5701</color></PolyStyle>
-<LineStyle><color>7f9b5701</color><width>5</width></LineStyle>
+<LineStyle><color>ff9b5701</color><width>5</width></LineStyle>
 </Style>
 <name>Group 18</name>
 <Polygon>
@@ -363,7 +363,7 @@
 <Placemark>
 <Style>
 <PolyStyle><color>4b42b37c</color></PolyStyle>
-<LineStyle><color>7f42b37c</color><width>5</width></LineStyle>
+<LineStyle><color>ff42b37c</color><width>5</width></LineStyle>
 </Style>
 <name>Group 19</name>
 <Polygon>
