@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.15.01
+// @version          2019.05.15.02
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -273,7 +273,7 @@
         }
 
         let center = new OL.Geometry.Point(W.map.center.lon,W.map.center.lat);
-
+        $('#mroCurrAreaTopbar').text("");
         for (var i=0;i<_layer.features.length;i++){
             var feature = _layer.features[i];
             if(_origOpacity && _settings.EnabledOverlays[feature.attributes.mapraidName].fillAreas)
