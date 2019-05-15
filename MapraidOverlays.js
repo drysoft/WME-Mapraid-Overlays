@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.10.04
+// @version          2019.05.15.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -150,6 +150,7 @@
             _features[i].style.fontSize= "16px";
             _features[i].style.fontColor= _features[i].style.fillColor;//"#ffffff";
             _features[i].attributes.mapraidName = mapraidName;
+
             if(!_settings.EnabledOverlays[mapraidName].fillAreas){
                 if(!_origOpacity)
                     _origOpacity = _features[i].style.fillOpacity;
@@ -158,6 +159,16 @@
         }
 
         _layer.addFeatures(_features);
+    }
+
+    function hex_is_light(color) {
+        const hex = color.replace('#', '');
+        const c_r = parseInt(hex.substr(0, 2), 16);
+        const c_g = parseInt(hex.substr(2, 2), 16);
+        const c_b = parseInt(hex.substr(4, 2), 16);
+        debugger;
+        const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+        return brightness > 70;
     }
 
     async function BuildEnabledOverlays(mapraidName){
@@ -253,7 +264,7 @@
         if($('#mrodivCurrMapraidArea').length === 0){
             var $section = $("<div>");
             $section.html([
-                '<div id="mrodivCurrMapraidArea" style="font-size: 14px; font-weight:bold; display:inline-block; margin-left:10px;">',
+                '<div id="mrodivCurrMapraidArea" style="font-size: 16px; font-weight:bold; display:inline-block; margin-left:10px;">',
                 '<span id="mroCurrAreaTopbar"></span>',
                 '</div>'
             ].join(' '));
@@ -270,6 +281,12 @@
             if(feature.geometry.intersects(center)){
                 $('#mroCurrAreaTopbar').text(feature.attributes.name);
                 $('#mroCurrAreaTopbar').css('color', feature.style.fillColor);
+
+                if(!hex_is_light(feature.style.fillColor))
+                    $('#mroCurrAreaTopbar').css('text-shadow', '-1px 0 #efefef, 0 1px #efefef, 1px 0 #efefef, 0 -1px #efefef');
+                else
+                    $('#mroCurrAreaTopbar').css('text-shadow', '-1px 0 black, 0 1px black, 1px 0 black, 0 -1px black');
+
 
                 if(_settings.HideCurrentArea){
                     if(!_origOpacity)
