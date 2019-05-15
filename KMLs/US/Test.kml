@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark>
+<Style>
+<PolyStyle><color>4ba95b3f</color></PolyStyle>
+<LineStyle><color>5fa95b3f</color><width>5</width></LineStyle>
+</Style>
+<name>Northwest: ssl-3(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -84.806205,41.696212,0
+                -84.802798,40.545226,0
+                -82.681838,40.573687,0
+                -82.71565,41.74708,0
+                -84.806205,41.696212,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4ba95b3f</color></PolyStyle>
+<LineStyle><color>5fa95b3f</color><width>5</width></LineStyle>
+</Style>
+<name>Southeast: roadtechie(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -83.377991,38.608822,0
+                -82.402268,38.361849,0
+                -80.750308,39.717725,0
+                -83.399364,39.702183,0
+                -83.377991,38.608822,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4ba95b3f</color></PolyStyle>
+<LineStyle><color>5fa95b3f</color><width>5</width></LineStyle>
+</Style>
+<name>Southwest: JustinS83(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -83.373871,38.424008,0
+                -83.416271,40.568263,0
+                -84.802798,40.545226,0
+                -84.883118,39.098095,0
+                -83.373871,38.424008,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4ba95b3f</color></PolyStyle>
+<LineStyle><color>5fa95b3f</color><width>5</width></LineStyle>
+</Style>
+<name>Expansion Area</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -81.754818,41.3959609,0
+                -81.7557792,40.7575831,0
+                -81.2990986,40.7532647,0
+                -81.2952073,41.3963244,0
+                -81.754818,41.3959609,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b37ebf4</color></PolyStyle>
+<LineStyle><color>5f37ebf4</color><width>5</width></LineStyle>
+</Style>
+<name>blackflagdan(R3)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -81.563568,41.757538,0
+                -81.563568,41.595039,0
+                -81.238571,41.595039,0
+                -81.238571,41.757538,0
+                -81.563568,41.757538,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b39dccd</color></PolyStyle>
+<LineStyle><color>5f39dccd</color><width>5</width></LineStyle>
+</Style>
+<name>Bruce1224(R5)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -83.6182695,41.0359295,0
+                -80.3642697,41.0359478,0
+                -80.3422452,42.0559474,0
+                -83.5891482,41.8839504,0
+                -83.5891492,41.8839304,0
+                -85.3708551,41.9002202,0
+                -85.4811735,38.8348036,0
+                -83.6932926,38.8520171,0
+                -83.6182695,41.0359295,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b44af62</color></PolyStyle>
+<LineStyle><color>5f44af62</color><width>5</width></LineStyle>
+</Style>
+<name>DaveKS14(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -83.23202,40.22359,0
+                -83.23202,40.06109,0
+                -82.90702,40.06109,0
+                -82.90702,40.22359,0
+                -83.23202,40.22359,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b579d00</color></PolyStyle>
+<LineStyle><color>5f579d00</color><width>5</width></LineStyle>
+</Style>
+<name>EdFromOhio(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -80.87072,41.24456,0
+                -80.87072,41.08206,0
+                -80.54572,41.08206,0
+                -80.54572,41.24456,0
+                -80.87072,41.24456,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b4a1ba6</color></PolyStyle>
+<LineStyle><color>5f4a1ba6</color><width>5</width></LineStyle>
+</Style>
+<name>gunnargsd(R3)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -81.29917,40.99389,0
+                -81.29917,39.8002,0
+                -80.51972,39.8002,0
+                -80.51972,40.99389,0
+                -81.29917,40.99389,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4ba95b3f</color></PolyStyle>
+<LineStyle><color>5fa95b3f</color><width>5</width></LineStyle>
+</Style>
+<name>JustinS83(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -81.6902,41.2117,0
+                -81.6902,40.8543,0
+                -81.2974,40.8543,0
+                -81.2947,41.2117,0
+                -81.6902,41.2117,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bffc39f</color></PolyStyle>
+<LineStyle><color>5fffc39f</color><width>5</width></LineStyle>
+</Style>
+<name>ryanh85(R3) Area 1</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -83.95411,40.07328,0
+                -83.95411,39.91078,0
+                -83.62911,39.91078,0
+                -83.62911,40.07328,0
+                -83.95411,40.07328,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b92357c</color></PolyStyle>
+<LineStyle><color>5f92357c</color><width>5</width></LineStyle>
+</Style>
+<name>ryanh85(R3) Area 2</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -84.362381,39.733208,0
+                -84.362381,39.570709,0
+                -84.037384,39.570709,0
+                -84.037384,39.733208,0
+                -84.362381,39.733208,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b4a1ba6</color></PolyStyle>
+<LineStyle><color>5f4a1ba6</color><width>5</width></LineStyle>
+</Style>
+<name>ryanh85(R3) Area 3</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -84.153145,39.840916,0
+                -84.153145,39.759663,0
+                -83.990639,39.759663,0
+                -83.990639,39.840916,0
+                -84.153145,39.840916,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b3644db</color></PolyStyle>
+<LineStyle><color>5f3644db</color><width>5</width></LineStyle>
+</Style>
+<name>ssl-3(R4)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -82.2372686,40.9814609,0
+                -84.7974186,41.7073568,0
+                -84.7974041,40.0034268,0
+                -82.2372704,40.3392709,0
+                -82.2372686,40.9814609,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b1b97f8</color></PolyStyle>
+<LineStyle><color>5f1b97f8</color><width>5</width></LineStyle>
+</Style>
+<name>TimC42(R4) Area 1</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -82.79632,39.80104,0
+                -83.26049,39.82846,0
+                -83.36761,39.13066,0
+                -82.64251,39.1477,0
+                -82.79632,39.80104,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b00b4f4</color></PolyStyle>
+<LineStyle><color>5f00b4f4</color><width>5</width></LineStyle>
+</Style>
+<name>TimC42(R4) Area 2</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -82.61181,41.63927,0
+                -82.82741,41.7408,0
+                -82.97024,41.463,0
+                -82.58984,41.41049,0
+                -82.61181,41.63927,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b465079</color></PolyStyle>
+<LineStyle><color>5f465079</color><width>5</width></LineStyle>
+</Style>
+<name>TWSchroeder(R3)</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -82.35,39.75,0
+                -83.65,39.75,0
+                -83.65,39.05,0
+                -82.35,39.05,0
+                -82.35,39.75,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document></kml>
