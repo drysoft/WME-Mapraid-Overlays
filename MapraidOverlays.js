@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.15.02
+// @version          2019.05.28.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -264,7 +264,7 @@
         if($('#mrodivCurrMapraidArea').length === 0){
             var $section = $("<div>");
             $section.html([
-                '<div id="mrodivCurrMapraidArea" style="font-size: 16px; font-weight:bold; display:inline-block; margin-left:10px;">',
+                '<div id="mrodivCurrMapraidArea" style="font-size: 16px; font-weight:bold; margin-left:10px; float:left;">',
                 '<span id="mroCurrAreaTopbar"></span>',
                 '</div>'
             ].join(' '));
