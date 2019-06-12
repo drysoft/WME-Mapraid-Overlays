@@ -3,7 +3,7 @@
 <PolyStyle><color>4b2dc0fb</color></PolyStyle>
 <LineStyle><color>5f2dc0fb</color><width>5</width></LineStyle>
 </Style>
-<name>Zone 1</name>
+<name>Group 1</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -24,7 +24,7 @@
 <PolyStyle><color>4bb18ff4</color></PolyStyle>
 <LineStyle><color>5fb18ff4</color><width>5</width></LineStyle>
 </Style>
-<name>Zone 2</name>
+<name>Group 2</name>
 <Polygon>
 <outerBoundaryIs>
 <LinearRing>
@@ -63,8 +63,8 @@
 </Placemark>
 <Placemark>
 <Style>
-<PolyStyle><color>4b2e344e</color></PolyStyle>
-<LineStyle><color>5f2e344e</color><width>5</width></LineStyle>
+<PolyStyle><color>4ba79700</color></PolyStyle>
+<LineStyle><color>5fa79700</color><width>5</width></LineStyle>
 </Style>
 <name>Zone 4</name>
 <Polygon>
