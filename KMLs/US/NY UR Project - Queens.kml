@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark>
+<Style>
+<PolyStyle><color>4b2dc0fb</color></PolyStyle>
+<LineStyle><color>5f2dc0fb</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 1</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.965692,40.741031,0
+                -73.897875,40.745481,0
+                -73.906287,40.793128,0
+                -73.938046,40.78083,0
+                -73.965692,40.741031,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bb18ff4</color></PolyStyle>
+<LineStyle><color>5fb18ff4</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 2</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.907212,40.79604,0
+                -73.897875,40.745481,0
+                -73.84363,40.745414,0
+                -73.867169,40.801965,0
+                -73.907212,40.79604,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b2f8b55</color></PolyStyle>
+<LineStyle><color>5f2f8b55</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 3</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.867169,40.801965,0
+                -73.851266,40.761364,0
+                -73.765889,40.760955,0
+                -73.772069,40.801835,0
+                -73.867169,40.801965,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b2e344e</color></PolyStyle>
+<LineStyle><color>5f2e344e</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 4</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.771897,40.798911,0
+                -73.760052,40.71979,0
+                -73.706237,40.723202,0
+                -73.695937,40.749606,0
+                -73.771897,40.798911,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bb73a67</color></PolyStyle>
+<LineStyle><color>5fb73a67</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 5</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.965692,40.741031,0
+                -73.89251,40.678528,0
+                -73.873721,40.693638,0
+                -73.897875,40.745481,0
+                -73.965692,40.741031,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4ba79700</color></PolyStyle>
+<LineStyle><color>5fa79700</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 6</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.84363,40.745414,0
+                -73.897875,40.745481,0
+                -73.874021,40.694191,0
+                -73.831528,40.720441,0
+                -73.84363,40.745414,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bab4939</color></PolyStyle>
+<LineStyle><color>5fab4939</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 7</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.851266,40.761364,0
+                -73.831528,40.720441,0
+                -73.760138,40.719725,0
+                -73.765975,40.76089,0
+                -73.851266,40.761364,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b4f0e88</color></PolyStyle>
+<LineStyle><color>5f4f0e88</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 8</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.831528,40.720441,0
+                -73.874021,40.694191,0
+                -73.725197,40.683833,0
+                -73.727579,40.722027,0
+                -73.831528,40.720441,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b0051e6</color></PolyStyle>
+<LineStyle><color>5f0051e6</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 9</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.708468,40.682784,0
+                -73.874021,40.694191,0
+                -73.859841,40.645546,0
+                -73.738029,40.625055,0
+                -73.708468,40.682784,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bb73a67</color></PolyStyle>
+<LineStyle><color>5fb73a67</color><width>5</width></LineStyle>
+</Style>
+<name>Zone 10</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -73.859841,40.645546,0
+                -73.966164,40.533875,0
+                -73.721718,40.581087,0
+                -73.738029,40.625055,0
+                -73.859841,40.645546,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document></kml>
