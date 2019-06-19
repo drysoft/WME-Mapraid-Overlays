@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.05.28.01
+// @version          2019.06.18.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -166,7 +166,6 @@
         const c_r = parseInt(hex.substr(0, 2), 16);
         const c_g = parseInt(hex.substr(2, 2), 16);
         const c_b = parseInt(hex.substr(4, 2), 16);
-        debugger;
         const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
         return brightness > 70;
     }
