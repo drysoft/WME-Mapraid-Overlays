@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?><kml xmlns="http://www.opengis.net/kml/2.2"><Document><Placemark>
+<Style>
+<PolyStyle><color>4bf2ebb2</color></PolyStyle>
+<LineStyle><color>5ff2ebb2</color><width>5</width></LineStyle>
+</Style>
+<name>AL MapRaid</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -88.3856593,30.1765133,0
+                -87.8050753,30.2000211,0
+                -87.1788355,30.2807655,0
+                -86.6569682,30.3472115,0
+                -86.1707875,30.2618905,0
+                -85.5994361,30.0101493,0
+                -85.4648341,29.9149778,0
+                -85.4703183,29.8447199,0
+                -85.4345836,29.63843,0
+                -85.0706394,29.6086201,0
+                -84.9456749,29.6933727,0
+                -85.0309179,30.4078003,0
+                -84.9348309,30.769577,0
+                -85.036505,31.1052885,0
+                -85.0983218,31.2175132,0
+                -85.0805257,31.6411455,0
+                -85.1341042,31.7673295,0
+                -85.145102,31.8466928,0
+                -85.1052877,31.9423102,0
+                -85.0668454,32.0296786,0
+                -85.040077,32.0983473,0
+                -85.0036927,32.1890553,0
+                -85.0037124,32.3307422,0
+                -85.000985,32.4710493,0
+                -85.0133537,32.5301203,0
+                -85.079284,32.5914614,0
+                -85.1397393,32.7856383,0
+                -85.1850811,32.9321464,0
+                -85.2235489,33.0657513,0
+                -85.6059674,34.9848169,0
+                -86.8279795,34.9930997,0
+                -88.1174382,35.0078442,0
+                -88.2020364,35.0074621,0
+                -88.1582154,34.939573,0
+                -88.1380902,34.9113486,0
+                -88.0987558,34.8932519,0
+                -88.0983779,34.8903543,0
+                -88.1010894,34.8650672,0
+                -88.1049659,34.8370233,0
+                -88.1115105,34.7809353,0
+                -88.1183031,34.7249173,0
+                -88.1269735,34.669181,0
+                -88.1563248,34.4697994,0
+                -88.1797963,34.2713295,0
+                -88.2308344,33.8743732,0
+                -88.3321719,33.0803969,0
+                -88.4727648,31.9034986,0
+                -88.4532247,31.4635096,0
+                -88.4397461,31.2432206,0
+                -88.4337122,31.0939821,0
+                -88.4256244,30.9876171,0
+                -88.4071469,30.5798433,0
+                -88.3972608,30.3664754,0
+                -88.3856593,30.1765133,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b589d0f</color></PolyStyle>
+<LineStyle><color>5f589d0f</color><width>5</width></LineStyle>
+</Style>
+<name>Group 1 - Mobile</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -87.1973627,30.2830619,0
+                -87.3051661,31.7082857,0
+                -88.4649104,31.7272687,0
+                -88.3851404,30.1763031,0
+                -87.8045578,30.1998109,0
+                -87.1973627,30.2830619,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b000000</color></PolyStyle>
+<LineStyle><color>5f000000</color><width>5</width></LineStyle>
+</Style>
+<name>Group 2 - Destin</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -87.1973627,30.2830619,0
+                -86.6564531,30.3470012,0
+                -86.1702734,30.2616802,0
+                -85.8996028,30.1465889,0
+                -85.8529109,30.329301,0
+                -85.9545344,31.6852088,0
+                -87.3051661,31.7082857,0
+                -87.1973627,30.2830619,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b00d6ff</color></PolyStyle>
+<LineStyle><color>5f00d6ff</color><width>5</width></LineStyle>
+</Style>
+<name>Group 3 - Dothan/PC</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -85.8996028,30.1465889,0
+                -85.5989232,30.0099391,0
+                -85.4643215,29.9147676,0
+                -85.4601496,29.8301975,0
+                -85.434071,29.6382198,0
+                -85.0701276,29.6084099,0
+                -84.9451633,29.6931625,0
+                -85.0304062,30.4075901,0
+                -84.9343195,30.7693668,0
+                -85.0454158,31.1272951,0
+                -85.0978101,31.2173031,0
+                -85.0800141,31.6409353,0
+                -85.9545344,31.6852088,0
+                -85.8529109,30.329301,0
+                -85.8996028,30.1465889,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4bb0279c</color></PolyStyle>
+<LineStyle><color>5fb0279c</color><width>5</width></LineStyle>
+</Style>
+<name>Group 4 - Montgomery</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -88.4072322,32.4405167,0
+                -88.4722455,31.9032884,0
+                -88.4649104,31.7272687,0
+                -87.2094377,31.7065456,0
+                -86.5791673,31.6950762,0
+                -85.9545344,31.6852088,0
+                -85.0800141,31.6409353,0
+                -85.1264399,31.7477077,0
+                -85.1445903,31.8464827,0
+                -85.0031814,32.1888451,0
+                -85.0032011,32.330532,0
+                -85.1607722,32.8013941,0
+                -88.361492,32.7567752,0
+                -88.4072322,32.4405167,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b1427a5</color></PolyStyle>
+<LineStyle><color>5f1427a5</color><width>5</width></LineStyle>
+</Style>
+<name><![CDATA[Group 5 - B'Ham]]></name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -86.8233137,33.8301606,0
+                -86.8119844,33.3026763,0
+                -86.710689,32.7912346,0
+                -85.1607722,32.8013941,0
+                -85.2397311,33.1362159,0
+                -85.2472823,33.1758731,0
+                -85.2583568,33.2152941,0
+                -85.2918799,33.4074859,0
+                -85.3740542,33.811053,0
+                -86.8233137,33.8301606,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b0051e6</color></PolyStyle>
+<LineStyle><color>5f0051e6</color><width>5</width></LineStyle>
+</Style>
+<name>Group 6 - Florence</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -88.2331078,33.8315763,0
+                -86.8233137,33.8301606,0
+                -86.8279795,34.9930997,0
+                -88.2015217,35.0078151,0
+                -88.181266,34.9728456,0
+                -88.1476204,34.9179685,0
+                -88.1177513,34.9010759,0
+                -88.096122,34.8931914,0
+                -88.0933754,34.8529128,0
+                -88.0902855,34.8351613,0
+                -88.1084816,34.808668,0
+                -88.2331078,33.8315763,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b2bb4af</color></PolyStyle>
+<LineStyle><color>5f2bb4af</color><width>5</width></LineStyle>
+</Style>
+<name>Group 7 - Tuscaloosa</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -88.2331078,33.8315763,0
+                -88.361492,32.7567752,0
+                -86.710689,32.7912346,0
+                -86.8119844,33.3026763,0
+                -86.8233137,33.8301606,0
+                -88.2331078,33.8315763,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+<Placemark>
+<Style>
+<PolyStyle><color>4b4f0e88</color></PolyStyle>
+<LineStyle><color>5f4f0e88</color><width>5</width></LineStyle>
+</Style>
+<name>Group 8 - Huntsville</name>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+
+                -86.8279795,34.9930997,0
+                -86.8233137,33.8301606,0
+                -85.3740542,33.811053,0
+                -85.6123033,34.9667111,0
+                -86.8279795,34.9930997,0
+              </coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document></kml>
