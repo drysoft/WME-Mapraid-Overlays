@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.06.18.01
+// @version          2019.09.25.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -30,7 +30,7 @@
     var _settings;
     var _settingsStoreName = '_wme_mapraid_overlays';
     var _kml;
-    var _layerName = 'Cities Overlay';
+    var _layerName = 'Mapraid Overlay';
     var _layer = null;
     var countryAbbr;
     var _origOpacity;
