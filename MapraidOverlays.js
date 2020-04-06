@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2019.10.29.01
+// @version          2020.04.06.0119.10.29.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -45,7 +45,7 @@
             $ && WazeWrap.Ready)
             init();
         else if (tries < 1000)
-            setTimeout(function () {bootstrap(tries++);}, 200);
+            setTimeout(function () {bootstrap(++tries);}, 200);
     }
 
     bootstrap();
@@ -85,7 +85,7 @@
 
     function GetFeaturesFromKMLString(strKML) {
         var format = new OL.Format.KML({
-            'internalProjection': W.map.baseLayer.projection,
+            'internalProjection': W.map.getProjectionObject(),
             'externalProjection': new OL.Projection("EPSG:4326"),
             'extractStyles': true
         });
