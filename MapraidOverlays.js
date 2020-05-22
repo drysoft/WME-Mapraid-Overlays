@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name             WME Mapraid Overlays
 // @namespace        https://greasyfork.org/en/users/166843-wazedev
-// @version          2020.04.06.02
+// @version          2020.5.22.01
 // @description      Mapraid overlays
 // @author           JustinS83
 // @include          https://www.waze.com/editor*
@@ -84,9 +84,9 @@
     }
 
     function GetFeaturesFromKMLString(strKML) {
-        var format = new OL.Format.KML({
+        var format = new OpenLayers.Format.KML({
             'internalProjection': W.map.getProjectionObject(),
-            'externalProjection': new OL.Projection("EPSG:4326"),
+            'externalProjection': new OpenLayers.Projection("EPSG:4326"),
             'extractStyles': true
         });
         return format.read(strKML);
@@ -97,7 +97,7 @@
 
         var layerid = 'wme_mapraid_overlays';
 
-        _layer = new OL.Layer.Vector("Mapraid Overlays", {
+        _layer = new OpenLayers.Layer.Vector("Mapraid Overlays", {
             rendererOptions: { zIndexing: true },
             uniqueName: layerid,
             layerGroup: 'mapraid_overlays',
@@ -271,7 +271,7 @@
             $('.topbar').append($section.html());
         }
 
-        let center = new OL.Geometry.Point(W.map.getCenter().lon,W.map.getCenter().lat);
+        let center = new OpenLayers.Geometry.Point(W.map.getCenter().lon,W.map.getCenter().lat);
         $('#mroCurrAreaTopbar').text("");
         for (var i=0;i<_layer.features.length;i++){
             var feature = _layer.features[i];
